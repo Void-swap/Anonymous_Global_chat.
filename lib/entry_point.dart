@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:uuid/uuid.dart';
 
-
 class EntryPoint extends StatefulWidget {
   const EntryPoint({Key? key}) : super(key: key);
 
@@ -79,6 +78,10 @@ class _EntryPointState extends State<EntryPoint> {
                                 hintText: "Discreet name...",
                                 hintStyle: TextStyle(color: Colors.black26),
                                 focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                                enabledBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(width: 0.2),
                                   borderRadius: BorderRadius.circular(15),
                                 ),
                               ),
